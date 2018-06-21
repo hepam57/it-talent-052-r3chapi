@@ -2,6 +2,6 @@
 
 Aplicaciòn para dar pedagia a los usuarios sobre el tratamiento de basuras.
 
--Liliana Poveda
--Cesar Antolinez
--Angel Leon
+- Liliana Poveda
+- Cesar Antolinez
+- Angel Leon
