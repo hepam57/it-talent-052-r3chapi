@@ -1,1 +1,7 @@
-# it-talent-052-r3chapi
+##R3CHAPI
+
+Aplicaciòn para dar pedagia a los usuarios sobre el tratamiento de basuras.
+
+·Liliana Poveda
+·Cesar Antolinez
+·Angel Leon
