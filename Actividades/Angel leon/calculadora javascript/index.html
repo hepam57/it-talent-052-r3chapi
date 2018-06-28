@@ -1,0 +1,262 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>
+            Calculadora JS
+        </title>
+        <meta charset="utf-8">
+            <style>
+                * {
+            padding: 0px;
+            margin: 0px;
+        }
+        
+        body {
+            background-color: #34ad72;
+        }
+        
+        #calculadora {
+            display: block;
+            float: left;
+            margin: 0 auto;
+        }
+        
+        #panel {
+            width: 350px;
+            height: 290px;
+            background-color: white;
+            margin: 0 auto;
+            margin-top: 50px;
+        }
+        
+        button,
+        #button0,
+        #button1,
+        #button2,
+        #button3,
+        #button4,
+        #button5,
+        #button6,
+        #button7,
+        #button8,
+        #button9 {
+            font-size: 18px;
+            width: 60px;
+            height: 40px;
+            border: none;
+            margin-left: 3px;
+            margin-bottom: 3px;
+            transition: all 0.3s ease;
+        }
+        
+        button:hover {
+            font-family: sans-serif, impact;
+            cursor: pointer;
+            color: #ff5792;
+            background-color: #53cc9e;
+        }
+        
+        input[disabled] {
+            font-size: 18px;
+            width: 100%;
+            height: 40px;
+            border: 0.3px dashed crimson;
+        }
+        
+        #nume {
+            float: left;
+            width: 38%;
+            background-color: white;
+        }
+        
+        #ope {
+            float: right;
+            width: 62%;
+            background-color: white;
+        }
+            </style>
+        </meta>
+    </head>
+    <body>
+        <br/>
+        <h1 style="text-align:center;color:white">
+            Buen día bienvenido a la calculadora de
+            <strong>
+                Angel Leon
+            </strong>
+            <h1>
+                <div id="Calculadora">
+                    <div id="panel">
+                        <input disabled="" id="numeros" name="numeros" placeholder="Digite su operacion aqui con los botones" type="text">
+                            <br/>
+                            <div id="ope">
+                                <button onclick="mul()" title="multiplicar">
+                                    *
+                                </button>
+                                <button onclick="div()" title="dividir">
+                                    /
+                                </button>
+                                <button onclick="suma()" title="sumar">
+                                    +
+                                </button>
+                                <button onclick="res()" title="restar">
+                                    -
+                                </button>
+                                <button onclick="elc()" title="número al cuadrado">
+                                    x²
+                                </button>
+                                <button onclick="raizc()" title="raiz cuadrada">
+                                    v
+                                </button>
+                                <button onclick="invrs()" title="inverso del número">
+                                    1/x
+                                </button>
+                                <button onclick="ent()" title="número entero">
+                                    int
+                                </button>
+                                <button onclick="xay()" title="x elevado a y">
+                                    x^y
+                                </button>
+                                <button onclick="eliminar()" title="borrar">
+                                    Del
+                                </button>
+                                <button onclick="eliminartodo()" title="resetear">
+                                    CE
+                                </button>
+                                <button onclick="operaciones()" title="resultado">
+                                    =
+                                </button>
+                            </div>
+                            <div id="nume">
+                                <script>
+                                    var btf = "</button>";
+    for (i = 0; i <= 10; i++) {
+        var bt = "<button  id='button" + i + "'  onclick='valor(this.id);' >";
+        document.write(bt);
+        document.write(i);
+
+    }
+    document.write(btf);
+    var point = "<button onclick='punto(this.innerHTML);' >.</button>";
+    document.write(point);
+    var resu = 0;
+    var val = 0;
+
+    function valor(clicked_id) {
+        var id = clicked_id;
+        var bt = document.getElementById(id);
+        var val = bt.innerHTML;
+        var resu = document.getElementById("numeros").value;
+        document.getElementById('numeros').value = resu + val;
+    }
+
+    function punto(valor) {
+        var resu = document.getElementById("numeros").value;
+        document.getElementById('numeros').value = resu + valor;
+    }
+
+    function eliminar() {
+        var resu = document.getElementById("numeros").value;
+        var nuevoval = resu.substring(0, resu.length - 1);
+        document.getElementById('numeros').value = nuevoval;
+    }
+
+    function eliminartodo() {
+        document.getElementById("numeros").value = "";
+    }
+
+    function suma() {
+        var nume = document.getElementById("numeros").value;
+        var resu = document.getElementById("numeros").value;
+        document.getElementById('numeros').value = resu + "+";
+    }
+
+    function mul() {
+        var nume = document.getElementById("numeros").value;
+        var resu = document.getElementById("numeros").value;
+        document.getElementById('numeros').value = resu + "*";
+    }
+
+    function div() {
+        var nume = document.getElementById("numeros").value;
+        var resu = document.getElementById("numeros").value;
+        document.getElementById('numeros').value = resu + "/";
+    }
+
+    function res() {
+        var nume = document.getElementById("numeros").value;
+        var resu = document.getElementById("numeros").value;
+        document.getElementById('numeros').value = resu + "-";
+    }
+
+    function raizc() {
+        var nume = document.getElementById("numeros").value;
+        var resu = document.getElementById("numeros").value;
+        document.getElementById('numeros').value = Math.sqrt(resu);
+
+    }
+
+    function elc() {
+        var nume = document.getElementById("numeros").value;
+        var resu = document.getElementById("numeros").value;
+        document.getElementById('numeros').value = Math.pow(resu, 2);
+
+    }
+
+    function invrs() {
+        var nume = document.getElementById("numeros").value;
+        var resu = document.getElementById("numeros").value;
+        document.getElementById('numeros').value = resu * -1;
+
+    }
+
+    function ent() {
+        var nume = document.getElementById("numeros").value;
+        if (nume > 0) {
+            document.getElementById('numeros').value = Math.floor(nume);
+        } else {
+            document.getElementById('numeros').value = -Math.ceil(nume);
+        }
+
+    }
+
+    function xay() {
+        var resu = document.getElementById("numeros").value;
+        document.getElementById('numeros').value = resu + "^";
+    }
+
+
+    function operaciones() {
+        var num = document.getElementById("numeros").value;
+        if (num == "") {
+            document.getElementById("numeros").value = "";
+        } else if (num.indexOf('^') != -1) {
+            num = num.split("^");
+            var x = num[0];
+            var y = num[1];
+            //console.log(num[0]);
+            //console.log(num[1]);
+            document.getElementById("numeros").value = Math.pow(x, y);
+        } else {
+            var nume = document.getElementById("numeros").value;
+            var nm = eval(nume);
+            document.getElementById("numeros").value = nm;
+        }
+
+
+    }
+                                </script>
+                            </div>
+                        </input>
+                    </div>
+                </div>
+                <h1 style="text-align:center;color:white">
+                    Tener en cuenta la jerarquia de operadores
+                </h1>
+                <p style="text-align:center;color:white">
+                    desarrollado por B.L.A.E
+                </p>
+            </h1>
+        </h1>
+    </body>
+</html>
