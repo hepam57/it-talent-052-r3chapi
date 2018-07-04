@@ -1,0 +1,29 @@
+rails generate controller usuario
+rails generate model usuario
+rails db:migrate
+rails generate model Libro
+
+rails new libreria --database=postgresql
+
+rails generate model libro nombre:string categoria:string editorial:string id_autor:integer fecha_publicacion:date
+
+   add_reference:libros,:autors,index:true
+
+a = Autors.new
+
+variable.atributo_tabla = 'Valor'
+
+a.nombre = ''
+a.save
+
+l.autors_id = a.id
+
+b.autor=a
+
+ a.books
+
+
+books.where(nombre: 'Got')
+
+
+books.where(nombre: 'Got').limit(1)
