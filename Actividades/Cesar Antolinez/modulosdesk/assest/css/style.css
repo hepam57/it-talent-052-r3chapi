@@ -1,0 +1,379 @@
+/**
+ * Menu
+ */
+
+body {
+    margin: 0;
+    padding: 0;
+    background: #F6F6F6;
+}
+nav {
+    padding: 30px 10px;
+    position: absolute;
+    top: 0;
+    left: 0;
+    background-color: #f2f2f2;
+    font-family: 'Muli', cursive;
+    width: 98.4%;
+}
+.nav {}
+.nav-left {
+    float: left;
+    width: 30%
+}
+.nav-left a {
+    padding: 5px;
+    width: auto;
+    color: #43525A;
+    text-decoration: none;
+    font-size: 1.14286rem;
+}
+.nav-separator {
+    flex-grow: 0;
+    flex-shrink: 0;
+    display: inline-block;
+    width: 1px;
+    background-color: #43525A;
+    margin: 0 10px;
+    height: 20px;
+}
+.nav-center {
+    width: 30%;
+    text-align: center;
+    float: left;
+}
+.nav-center img {
+    width: auto;
+    height: 56px;
+}
+.nav-rigt {
+    width: 40%;
+    float: left;
+}
+.nav-rigt a {
+    padding: 4px;
+    width: auto;
+    color: #43525A;
+    text-decoration: none;
+    font-size: 1.14286rem;
+}
+/**
+ * Fin Menu
+ */
+
+/**
+ * Seccion 1
+ */
+
+.seccion_1 {
+    display: flex;
+    margin-top: 120px;
+    background: url('https://www.modulosdesk.com/static/media/modulos-web-hero-bg-flip.0efcc100.jpg');
+    background-position: center bottom;
+    background-position-x: center;
+    background-position-y: bottom;
+    background-repeat: no-repeat;
+    height: 600px;
+}
+.seccion_1_texto {}
+.seccion_1_texto_titulo {
+    font-family: "Muli", sans-serif;
+    font-weight: 600;
+    font-size: 2.5rem;
+    margin: 0 0 1.42857rem;
+    line-height: 3.85714rem;
+    margin: 80px 0 0 15px;
+    width: 300px;
+    color: #43525A;
+}
+.seccion_1_texto_contenido {
+    font-family: "Muli", sans-serif;
+    font-weight: 300;
+    font-size: 1.28571rem;
+    line-height: 160%;
+    margin: 0 0 2.14286rem;
+    margin: 10px 0 0 15px;
+    width: 400px;
+    text-align: justify;
+    color: #43525A;
+}
+.seccion_1_botones {
+    display: flex;
+}
+.seccion_1_botones>.btn_1 {
+    background-color: #28A5BE;
+    color: #ffffff;
+    border-bottom-style: none;
+    border-bottom-width: 0;
+    font-family: "Muli", sans-serif;
+    padding: 22px 27px;
+    margin-left: 10px;
+    margin-top: 30px;
+    border-bottom-left-radius: 0;
+}
+.seccion_1_botones>.btn_2 {
+    background-color: #000;
+    color: #ffffff;
+    border-bottom-style: none;
+    border-bottom-width: 0;
+    font-family: "Muli", sans-serif;
+    padding: 12px 32px;
+    border-bottom-left-radius: 0;
+    height: 20px;
+    margin-top: 40px;
+}
+.seccion_1_img {
+    display: block;
+}
+.seccion_1_img img {
+    width: 750px;
+    height: auto;
+    position: absolute;
+    right: 0;
+}
+/**
+ * Fin Seccion 1
+ * /
+
+/**
+ * seccion 2
+ */
+
+.seccion_2 {
+    display: flex;
+    border: 1px solid gray;
+}
+.seccion_2_img img {
+    width: 50vh;
+}
+.seccion_2_texto {
+    padding: 90px 90px 0 90px;
+    /*margin-left: 40%;*/
+    font-family: "Muli", sans-serif;
+    color: #43525A;
+}
+.seccion_2_texto_titulo {
+    font-size: 2rem;
+    max-width: 60%;
+}
+.seccion_2_texto_contenido {
+    font-size: 1rem;
+}
+.seccion_2_texto_boton>.btn_1 {
+    background-color: #000;
+    color: #ffffff;
+    border-bottom-style: none;
+    border-bottom-width: 0;
+    font-family: "Muli", sans-serif;
+    padding: 12px 32px;
+    border-bottom-left-radius: 0;
+    height: 20px;
+    margin-top: 40px;
+    text-decoration: none;
+}
+/**
+ * Fin seccion 2
+ */
+
+/**
+ * Seccion 3
+ */
+
+.seccion_3 {
+    color: #43525A;
+    font-family: "Muli", sans-serif;
+    margin-bottom: 7%;
+}
+.seccion_3_texto {
+    display: block;
+    max-width: 100%;
+    text-align: center;
+    padding: 90px 90px 0 90px;
+}
+.seccion_3_texto_titulo {
+    font-size: 2rem;
+}
+.seccion_3_texto_contenido {
+    font-size: 1rem;
+}
+.seccion_3_items {
+    padding-left: 5%;
+    padding-right: 5%;
+    display: flex;
+}
+.seccion_3_items>.item {
+    margin: 10px;
+    text-align: center;
+    max-width: 30%
+}
+.seccion_3_items>.item>.item-img img {
+    width: 100%;
+}
+.seccion_3_items>.item>.item-titulo {
+    font-size: 1.5rem;
+    max-width: 100%;
+    font-weight: bold;
+}
+.seccion_3_items>.item>.item-contenido {
+    font-size: 1rem;
+    max-width: 100%;
+}
+/**
+ * Fin Seccion 3
+ */
+
+/**
+ *  Seccion 4
+ */
+
+.seccion_4 {
+    display: block;
+}
+.seccion_4_fondo {
+    max-width: 100%;
+    height: 580px;
+    background-position-x: center;
+    background-position-y: center;
+    background: url('https://www.modulosdesk.com/static/media/modulos-4x2conf.cbb371ed.jpg') no-repeat center;
+    background-size: 100%;
+    display: flex;
+}
+.seccion_4_fondo>.boton_mas {
+    height: 50px;
+    width: 50px;
+    background: #fff;
+    font-size: 40px;
+    font-weight: bold;
+    text-decoration: none;
+    border-radius: 50%;
+    text-align: center;
+    color: black;
+}
+.seccion_4_fondo>.boton_mas_1 {
+    margin: 500px 0 0 10%;
+}
+.seccion_4_fondo>.boton_mas_2 {
+    margin: 400px 0 0 10%;
+}
+.seccion_4_fondo>.boton_mas_3 {
+    margin: 420px 0 0 50%;
+}
+.seccion_4_fondo>.boton_mas_4 {
+    margin: 500px 0 0 10%;
+}
+.seccion_4_texto {
+    position: relative;
+    z-index: 2;
+    background: #fff;
+    width: 60%;
+    margin-top: -5%;
+    margin-right: auto;
+    margin-left: auto;
+    padding: 5%;
+    color: #43525A;
+    font-family: "Muli", sans-serif;
+    text-align: center;
+}
+.seccion_4_texto_titulo {
+    font-size: 2rem;
+}
+.seccion_4_texto_contenido {
+    font-size: 1rem;
+}
+.seccion_4_texto_img img {
+    max-width: 50%;
+    height: auto;
+}
+.seccion_4_texto_items {
+    display: flex;
+}
+.seccion_4_texto_items>.item {
+    text-align: center;
+    max-width: 20%;
+    margin-left: auto;
+    margin-right: auto;
+}
+.seccion_4_texto_items>.item>.item-boton {
+    display: flex;
+    border: 0.2rem solid #43525A;
+    height: 3rem;
+    width: 3rem;
+    align-items: center;
+    justify-content: center;
+    background: #fff;
+    font-size: 1rem;
+    font-weight: bold;
+    text-decoration: none;
+    border-radius: 50%;
+    text-align: center;
+    color: black;
+    margin-left: auto;
+    margin-right: auto;
+}
+/**
+ *  Fin Seccion 4
+ */
+/**
+*   Seccion 5
+*/
+.seccion_5{
+    display: flex;
+    margin: 0 auto;
+    max-width: 80%;
+    height: 600px;
+    background: #F6F6F6;
+}
+.seccion_5_img{
+    width: 15%;
+    height: 100%;
+
+}
+.seccion_5_img_1{
+    -webkit-background-size: 500px;
+    background-size: 500px;
+    background-position-x: right;
+    background-position-y: center;
+    background: url('https://www.modulosdesk.com/static/media/module-cabling-hole--aeon.ee835ce4.png') no-repeat right;
+}
+.seccion_5_img_2{
+    background-position-x: left;
+    background-position-y: center;
+    background: url('https://www.modulosdesk.com/static/media/module-cabling-hole--heritage.64bc524e.png') no-repeat left;
+}
+.seccion_5_texto{
+    text-align: center;
+    width: 70%;
+    color: #43525A;
+    font-family: "Muli", sans-serif;
+    display: block;
+    padding: 15px;
+}
+
+.seccion_5_texto_titulo{
+    font-size: 2rem;
+    font-weight: bold;
+    margin-top: 10%;
+}
+.seccion_5_texto_contenido{
+    font-size: 1rem;
+
+    margin-top: 5%;
+    margin-bottom: 10%;
+
+}
+.seccion_5_texto_boton{
+    border: solid #28A5BE 2px;
+    color: #28A5BE;
+    background: #F6F6F6;
+    padding: 1rem;
+    margin: 10%;
+    text-decoration: none;
+}
+.seccion_5_texto_boton:hover{
+    color: #F6F6F6;
+    background: #28A5BE;
+}
+
+/**
+*   Fin Seccion 5
+*/
