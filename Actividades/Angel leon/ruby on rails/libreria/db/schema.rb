@@ -29,8 +29,8 @@ ActiveRecord::Schema.define(version: 20180704004150) do
     t.date     "fecha_publicacion"
     t.datetime "created_at",        null: false
     t.datetime "updated_at",        null: false
-    t.integer  "autors_id"
-    t.index ["autors_id"], name: "index_libros_on_autors_id", using: :btree
+    t.integer  "autor_id"
+    t.index ["autor_id"], name: "index_libros_on_autors_id", using: :btree
   end
 
 end
