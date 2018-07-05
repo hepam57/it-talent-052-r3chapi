@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8"/>
+        <meta content="IE=edge" http-equiv="X-UA-Compatible"/>
+        <title>
+            Consumit api rest
+        </title>
+        <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/css/bootstrap.min.css" rel="stylesheet"/>
+    </head>
+    <section class="container">
+        <div class="row">
+            <button class="btn btn-primary" onclick="llamar_libros()" type="button">
+                Buscar Libros
+            </button>
+        </div>
+        <div class="row">
+            <div class="table-responsive">
+                <table class="table table-border" id="table">
+                    <thead>
+                        <tr>
+                            <th>
+                                Id
+                            </th>
+                            <th>
+                                Titulo
+                            </th>
+                            <th>
+                                Número de paginas
+                            </th>
+                            <th>
+                                Autor
+                            </th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                    </tbody>
+                </table>
+            </div>
+        </div>
+    </section>
+    <body>
+    </body>
+    <script src="https://code.jquery.com/jquery-3.3.1.min.js">
+    </script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js">
+    </script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/js/bootstrap.min.js">
+    </script>
+    <script type="text/javascript">
+        function llamar_libros(){	
+	        $.ajax({
+	   			url: "http://localhost:3000/libros/get_libros",
+	   			method: 'get',
+	   			headers: {
+			        'Content-Type': 'application/x-www-form-urlencoded'
+			    },
+	   			success: function(rest){
+	   				var respuesta = $.parseJSON(rest);
+	   				alert(respuesta);
+	   			} 
+			});
+    	}
+    </script>
+</html>
