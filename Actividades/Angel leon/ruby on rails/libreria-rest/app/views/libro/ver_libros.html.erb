@@ -1,0 +1,86 @@
+<!DOCTYPE doctype html>
+<html lang="es">
+<head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta content="width=device-width, initial-scale=1, shrink-to-fit=no" name="viewport">
+    <!-- Bootstrap CSS -->
+    <link crossorigin="anonymous" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" rel="stylesheet">
+    <title>
+        Libreria
+    </title>
+</link>
+</meta>
+</meta>
+</head>
+<body>
+    <div class="container-fluid">
+        <div class="row">
+            <div class="col-md-12 ">
+                <h1 class="text-center">
+                    Api-Rest libros
+                </h1>
+                <h1>
+                    Metodo Get
+                </h1>
+                <div class="col-md-12 mb-3">
+                    <button  class="btn btn-primary" id="boton">
+                        Obtener libros
+                    </button>
+                </div>
+                
+                <table class="table table-bordered" id="libro">
+                    <thead>
+
+                       <tr> <th>Código libro</th>
+                        <th>Nombre libro</th>
+                        <th>Categoria de libro</th>
+                        <th>Editorial</th>
+                        <th>Autor</th>
+                    </tr>
+
+                </thead>
+                <tbody>
+
+                </tbody>
+            </table>
+        </div>
+    </div>
+</div>
+<!-- Optional JavaScript -->
+<!-- jQuery first, then Popper.js, then Bootstrap JS -->
+<script crossorigin="anonymous" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8=" src="https://code.jquery.com/jquery-3.3.1.min.js">
+</script>
+<script crossorigin="anonymous" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js">
+</script>
+<script type="text/javascript">
+    $("#boton").click(function(){
+
+        $('#libro > tbody > tr').empty();
+
+        $.ajax({
+            method : 'get',
+            url: "http://localhost:3000/libro/get_libros", success: function(result){
+                let resultado = result['libros'];
+                for (var i = 0; i <= resultado.length; i++) {
+                   $('#libro > tbody').append('<tr>');
+                   $.each( resultado[i], function( index, value ) {
+                    if(index!='autor'){
+                        $('#libro > tbody').append( `<td>${value}</td>`);
+                    }else{
+                       $.each( resultado[i]['autor'], function( index, value ) {
+                        $('#libro > tbody').append( `${index} :${value}`);
+                        $('#libro > tbody').append('<br/>');
+
+                    });
+                   }
+               });
+                   $('#libro > tbody').append('</tr>');
+               }
+           }});
+    });
+</script>
+<script crossorigin="anonymous" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js">
+</script>
+</body>
+</html>

@@ -1,0 +1,15 @@
+UPDATE public.libros SET editorial = 'Planeta' WHERE id = 1;
+
+
+
+INSERT INTO public.libros (nombre,categoria,editorial,fecha_publicacion)
+VALUES
+ (value1, value2, …),
+ (value1, value2, …);
+
+
+
+INSERT INTO public.autors (nombre,created_at,updated_at,fecha_nacimiento)
+VALUES
+ ('Juan lozano',default,default, '15-07-1980'),
+ ('Pedro penzano',default,default, '10-03-1990');
