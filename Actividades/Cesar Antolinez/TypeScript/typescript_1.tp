@@ -1,0 +1,88 @@
+#Variables
+const
+let
+var
+
+#tipar
+let a: any = 5;
+* string = cadena
+* date = fecha
+* number = numeros
+* any = cualqiuer cosa
+* Array<number> = []
+
+#funcion anonima
+
+arrreglo.forEach(() => {
+	
+});
+
+#clases
+
+class Carro implent Correr{
+	#variables
+	public _ruedas: number;
+	#metodo epecial
+	constructor( ruedas: number){
+
+	}
+	#metodo epecial
+	get ruedas(): number{
+		return this._ruedas
+	}
+	#metodo epecial
+	set ruedas(r: number){
+		this._ruedas = r;
+	}
+	#metodo normal sin retorno
+	public arrancar(): void{
+
+	}
+	#metodo normal con retorno
+	public cuantasRuedas(): number{
+		return this._ruedas;
+	}
+
+	#interfas
+	correr(): void{
+		...
+	}
+}
+
+#Herencia
+
+class Camion extends Carro{
+	#metodo epecial
+	constructor(){
+		#llamando al construtor extendido
+		super();
+		# acceder a la variable de la clase extendida
+		this._ruedas;
+	}
+}
+
+#calse astracta
+class absbtract ClaseAbs{
+	
+}
+
+#intancear
+
+let carro = new Carro();
+carro.Arrancar();
+
+#enum => enumerar
+enum t {
+	perro = 1,
+	gato = 2 
+}
+
+t.perro;
+
+#objeto
+private obj: any;
+
+obj = {
+	algo: 1
+}
+ 

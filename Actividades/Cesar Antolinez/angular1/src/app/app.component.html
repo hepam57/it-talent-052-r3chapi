@@ -1,0 +1,15 @@
+<input [(ngModel)]="miTexto" type="text"/>
+<button (click)="MostrarAlerta()" type="button">
+    Agregar
+</button>
+<div *ngFor="let item of arreglo">
+  {{item}}
+</div>
+<div *ngIf="mostrar">
+  Esto es Verdadero
+</div>
+<div *ngIf="!mostrar">
+  Esto es falso
+</div>
+<button type="button" (click)="Validar()">Validar</button>
+
