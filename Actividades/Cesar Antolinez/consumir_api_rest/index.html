@@ -26,7 +26,7 @@
                                 Titulo
                             </th>
                             <th>
-                                Número de páginas
+                                Número de paginas
                             </th>
                             <th>
                                 Autor
@@ -52,10 +52,12 @@
 	        $.ajax({
 	   			url: "http://localhost:3000/libros/get_libros",
 	   			method: 'get',
+	   			headers: {
+			        'Content-Type': 'application/x-www-form-urlencoded'
+			    },
 	   			success: function(rest){
-	   				$.each(rest.libros,function(index,item){
-		   				$('#table').append('<tr><td>'+item.id+'</td><td>'+item.titulo+'</td><td>'+item.paginas+'</td><td>'+item.autor.nombre+'</td></tr>');	
-		   			});
+	   				var respuesta = $.parseJSON(rest);
+	   				alert(respuesta);
 	   			} 
 			});
     	}
