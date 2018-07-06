@@ -1,0 +1,23 @@
+
+npm install -g @angular/cli
+ng new primer-aplicacion
+ng serve
+http://localhost:4200/
+npm install -> si no tiene carpeta node_modules
+
+abrir en editor
+
+
+package.json contiene todas las dependencias del proyecto
+
+src/app/ -> estos son todos los archivos del componente
+
+app.component.ts contiene un decorador con un arreglo que contiene la ruta del
+template, la ruta de los estilos y el selector que usara para reenderizar el component 
+
+app.module.ts hace el llamado a app.component.ts
+
+src/index.html es el archivo que reenderiza angular
+
+@Component -> decorador
+
