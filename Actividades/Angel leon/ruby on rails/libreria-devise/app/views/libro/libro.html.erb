@@ -1,5 +1,7 @@
 <h1>Libros</h1>
 
+<%= link_to "Logout", destroy_user_session_path, method: :delete, class: 'nav-link' %>
+
 <% for elemento in @libros %>
  <p><%= elemento[:autor_id] %></p>
 
