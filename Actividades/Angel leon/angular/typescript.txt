@@ -1,0 +1,38 @@
+const a = 'valor';
+let n: Number = 5;
+let variable: any = "numero"+1+1;
+let array: Array<number> = [];
+
+array.forEach(() => {
+
+    array.push(1);
+
+});
+
+
+class Carro {
+
+    public puertas: number;
+    private _ruedas: number;
+
+    constructor() {
+        
+    }
+
+    get ruedas(): number {
+        return this._ruedas;
+    }
+
+    set ruedas(r: number) {
+        this.ruedas = r;
+    }
+
+    public arrancar(): void {
+        console.log('estoy arrancando')
+    }
+
+    public cantidadruedas():number {
+        return this._ruedas;
+    }
+
+}
