@@ -1,0 +1,2 @@
+class InformativosEtiqueta < ApplicationRecord
+end
