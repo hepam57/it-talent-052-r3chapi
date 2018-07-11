@@ -1,0 +1,49 @@
+<h1>Libros</h1>
+
+<% for elemento in @libros %>
+ <p><%= elemento[:autor_id] %></p>
+
+ <table>
+     <thead>
+            <th>Id</th>
+            <th>Nombre</th>
+            <th>Categoria</th>
+            <th>Editorial</th>
+            <th>Autor</th>
+     </thead>
+     <tbody>
+        <tr>
+            <td><%= elemento[:id] %></td>
+            <td><%= elemento[:nombre] %></td>
+            <td><%= elemento[:categoria] %></td>
+            <td><%= elemento[:editorial] %></td>
+            <td><%= elemento.autor[:nombre] %></td>
+        </tr>
+     </tbody>
+ </table>
+
+<% end %> 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
