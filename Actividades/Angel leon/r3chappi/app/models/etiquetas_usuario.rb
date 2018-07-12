@@ -1,0 +1,2 @@
+class EtiquetasUsuario < ApplicationRecord
+end
