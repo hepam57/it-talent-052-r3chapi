@@ -1,0 +1,21 @@
+<div *ngIf="mostrar">
+  Mostrar contenido
+</div>
+<ul>
+  <li *ngFor="let item of arreglo">
+    {{item}}
+  </li>
+</ul>
+<input type="text" [(ngModel)]="captar" />
+<b>{{captar}}</b>
+<button type="button" (click)="agregar()">Agregar</button>
+<br>
+<div>
+  <label for="seachMovie"></label>
+  <input type="text" id="seachMovie" [(ngModel)]="title"/>
+  <button type="button" (click)="searchMovie()">Search movie</button>
+</div>
+<div>
+  <h3>{{movie?.Title}}</h3>
+  <img *ngIf="movie" src="{{movie?.Poster}}" alt="img-movie">
+</div>
