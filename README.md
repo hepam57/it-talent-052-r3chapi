@@ -11,7 +11,7 @@ Aplicaciòn para dar pedagia a los usuarios sobre el tratamiento de basuras.
 
 ```html
 <ul>
-  
+  <li *ng-for=""></li>
 </ul>
 ```
  
