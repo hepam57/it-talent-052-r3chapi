@@ -1,0 +1,13 @@
+<!--The content below is only a placeholder and can be replaced.-->
+
+<input placeholder="Escriba su nombre" [(ngModel)]='titulo' />
+
+<button (click)="Click()">Clickeame</button>
+
+<p>Hola: {{titulo}}</p>
+
+<div *ngIf='mostrar'>esta en verdadero</div>
+<div *ngIf='!mostrar'>esta en falso</div>
+
+
+<div *ngFor= "let item of arreglo">{{item}}</div>
