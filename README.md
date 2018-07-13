@@ -7,3 +7,16 @@ Aplicaciòn para dar pedagia a los usuarios sobre el tratamiento de basuras.
 - Liliana Poveda
 - Cesar Antolinez
 - Angel Leon
+
+
+```html
+<ul>
+  
+</ul>
+```
+ 
+```python
+s = "Python syntax highlighting"
+print s
+```
+ 
