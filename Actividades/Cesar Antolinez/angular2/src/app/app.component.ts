@@ -19,12 +19,11 @@ export class AppComponent {
   public agregar(): void {
     this.arreglo.push(this.captar);
   }
-  public searchMovie(): void {
-    this.movioService.getMovieByTitle(this.title)
-      .subscribe( (response: any) => {
+  public searchMovie(title: string): void {
+    this.movioService.getMovieByTitle(title)
+      .subscribe((response: any) => {
         this.movie = response;
         console.log(response);
       });
   }
-
 }
