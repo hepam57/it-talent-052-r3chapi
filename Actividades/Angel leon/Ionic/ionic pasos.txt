@@ -26,3 +26,7 @@ https://cordova.apache.org/plugins/?q=geolocation
 
 ionic cordova run ios
 
+https://ionicframework.com/docs/intro/deploying/
+
+ANDROID_HOME=C:\Users\Administrador\AppData\Local\Android\sdk
+JAVA_HOME=C:\Program Files\java\jdk1.8.0_181
