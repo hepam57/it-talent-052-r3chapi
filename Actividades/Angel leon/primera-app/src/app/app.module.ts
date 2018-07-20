@@ -11,6 +11,9 @@ import { TabsPage } from '../pages/tabs/tabs';
 import { StatusBar } from '@ionic-native/status-bar';
 import { SplashScreen } from '@ionic-native/splash-screen';
 import { Geolocation } from '../../node_modules/@ionic-native/geolocation';
+import { Camera } from '@ionic-native/camera';
+import { PrimerSProvider } from '../providers/primer-s/primer-s';
+import { HttpClientModule } from '../../node_modules/@angular/common/http';
 
 @NgModule({
   declarations: [
@@ -22,7 +25,8 @@ import { Geolocation } from '../../node_modules/@ionic-native/geolocation';
   ],
   imports: [
     BrowserModule,
-    IonicModule.forRoot(MyApp)
+    IonicModule.forRoot(MyApp),
+    HttpClientModule
   ],
   bootstrap: [IonicApp],
   entryComponents: [
@@ -36,6 +40,8 @@ import { Geolocation } from '../../node_modules/@ionic-native/geolocation';
     StatusBar,
     SplashScreen,
     Geolocation,
+    PrimerSProvider,
+    Camera,
     {provide: ErrorHandler, useClass: IonicErrorHandler}
   ]
 })

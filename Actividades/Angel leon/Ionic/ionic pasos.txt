@@ -8,7 +8,7 @@ ionic cordova --help
 
 ionic start myNewProject
 
-npm install @ionic-native/core --save
+npm install @ionic-native/core --save -> solo se instala una vez
 
 https://cordova.apache.org/plugins/
 
@@ -19,6 +19,8 @@ cordova-plugin-geolocation
 npm install @ionic-native/geolocation --save
 
 agregar descripcion para poder usar IOS
+
+https://ionicframework.com/docs/cli/projects.html
 
 https://cordova.apache.org/plugins/?q=geolocation
 
