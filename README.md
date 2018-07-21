@@ -9,6 +9,6 @@ Aplicaciòn para dar pedagia a los usuarios sobre el tratamiento de basuras.
 - Angel Leon
 
 
-[Prototipo app Movil](https://c0der97.github.io/Proyecto/prototipo/index.html)
+[Prototipo app Movil](https://c0der97.github.io/Proyecto/prototipo/index.html){:target="_blank"}
 
  
