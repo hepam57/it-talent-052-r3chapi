@@ -9,14 +9,6 @@ Aplicaciòn para dar pedagia a los usuarios sobre el tratamiento de basuras.
 - Angel Leon
 
 
-```html
-<ul>
-  <li *ng-for=""></li>
-</ul>
-```
- 
-```python
-s = "Python syntax highlighting"
-print s
-```
+[Prototipo app Movil](https://c0der97.github.io/Proyecto/prototipo/index.html)
+
  
