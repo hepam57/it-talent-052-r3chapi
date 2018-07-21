@@ -13,8 +13,12 @@ Aplicaciòn para brindar pedagia a los habitantes de chapinero sobre el tratamie
 
 ## Proyecto
 
+Modelo relacional
+
+---
 
 ![Módelo relacional](https://raw.githubusercontent.com/TalentoBogotaFedesoft/it-talent-052-r3chapi/master/Proyecto/Modelo%20relacional/ER1.png)
+---
 [Prototipo app Movil](https://c0der97.github.io/Proyecto/prototipo/index.html)
 
  
