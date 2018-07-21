@@ -19,6 +19,41 @@ Modelo relacional
 
 ![Módelo relacional](https://raw.githubusercontent.com/TalentoBogotaFedesoft/it-talent-052-r3chapi/master/Proyecto/Modelo%20relacional/ER1.png)
 ---
+
+Sketch y Prototipo App movil
+
+---
+
+
+Sketch app
+
+![sketch app](https://raw.githubusercontent.com/TalentoBogotaFedesoft/it-talent-052-r3chapi/master/Proyecto/diseños/Diseño%20UI/sketch-app/sketch-app.jpeg)
+
+Prototipo App movil hecho con Azure RP
+
 [Prototipo app Movil](https://c0der97.github.io/Proyecto/prototipo/index.html)
 
  
+Wireframes Back-office 
+
+---
+
+
+![1-2](https://raw.githubusercontent.com/TalentoBogotaFedesoft/it-talent-052-r3chapi/master/Proyecto/diseños/Diseño%20UI/wireframe-backoffice/1-2.jpeg)
+
+![3-4](https://raw.githubusercontent.com/TalentoBogotaFedesoft/it-talent-052-r3chapi/master/Proyecto/diseños/Diseño%20UI/wireframe-backoffice/3-4.jpeg)
+
+![5-6](https://raw.githubusercontent.com/TalentoBogotaFedesoft/it-talent-052-r3chapi/master/Proyecto/diseños/Diseño%20UI/wireframe-backoffice/5-6.jpeg)
+
+![7-8](https://raw.githubusercontent.com/TalentoBogotaFedesoft/it-talent-052-r3chapi/master/Proyecto/diseños/Diseño%20UI/wireframe-backoffice/7-8.jpeg)
+
+
+![9-10](https://raw.githubusercontent.com/TalentoBogotaFedesoft/it-talent-052-r3chapi/master/Proyecto/diseños/Diseño%20UI/wireframe-backoffice/9-10.jpeg)
+
+
+![11-12](https://raw.githubusercontent.com/TalentoBogotaFedesoft/it-talent-052-r3chapi/master/Proyecto/diseños/Diseño%20UI/wireframe-backoffice/11-12.jpeg)
+
+
+![13-14](https://raw.githubusercontent.com/TalentoBogotaFedesoft/it-talent-052-r3chapi/master/Proyecto/diseños/Diseño%20UI/wireframe-backoffice/13-14.jpeg)
+
+![15-16](https://raw.githubusercontent.com/TalentoBogotaFedesoft/it-talent-052-r3chapi/master/Proyecto/diseños/Diseño%20UI/wireframe-backoffice/15-16.jpeg)
