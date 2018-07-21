@@ -26,7 +26,7 @@ development:
   database: libreria_production
   pool: 5
   username: postgres
-  password: password
+  password: root
   host: localhost
   port: 5432
   # The specified database role being used to connect to postgres.
@@ -64,7 +64,7 @@ test:
   database: libreria_test
   pool: 5
   username: postgres
-  password: password
+  password: root
   host: localhost
   port: 5432
 # As with config/secrets.yml, you never want to store sensitive information,
@@ -91,6 +91,6 @@ production:
   database: libreria_production
   pool: 5
   username: postgres
-  password: password
+  password: root
   host: localhost
   port: 5432
