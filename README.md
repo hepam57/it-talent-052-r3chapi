@@ -60,7 +60,8 @@ Wireframes Back-office
 
  
 Sketch página de producto
+
 ---
 
-![15-16](https://raw.githubusercontent.com/TalentoBogotaFedesoft/it-talent-052-r3chapi/master/Proyecto/diseños/Diseño%20UI/wireframe-landing/landing-1.jpeg)
+![sketch langind](https://raw.githubusercontent.com/TalentoBogotaFedesoft/it-talent-052-r3chapi/master/Proyecto/diseños/Diseño%20UI/wireframe-landing/landing-1.jpeg)
 
