@@ -1,0 +1,8 @@
+{
+  "name": "r3chappi",
+  "app_id": "",
+  "type": "ionic-angular",
+  "integrations": {
+    "cordova": {}
+  }
+}

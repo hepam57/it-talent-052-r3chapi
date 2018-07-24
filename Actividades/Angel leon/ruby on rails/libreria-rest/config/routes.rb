@@ -4,6 +4,7 @@ Rails.application.routes.draw do
   get "libro/get_libros"
   get "libro/ver_libros"
   post "libro/crear_libro"
-
+  get "libro/c_libro_beta"
+  
 
 end
