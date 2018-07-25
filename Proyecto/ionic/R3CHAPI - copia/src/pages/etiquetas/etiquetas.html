@@ -1,0 +1,24 @@
+<!--
+  Generated template for the EtiquetasPage page.
+
+  See http://ionicframework.com/docs/components/#navigation for more info on
+  Ionic pages and navigation.
+-->
+<ion-header>
+
+  <ion-navbar>
+    <ion-title>Etiquetas</ion-title>
+  </ion-navbar>
+
+</ion-header>
+
+
+<ion-content padding>
+  <ion-row>
+    <ion-col *ngFor="let etiqueta of etiquetas" col-4>
+      <ion-item>
+        {{ etiqueta }}
+      </ion-item>
+    </ion-col>
+  </ion-row>
+</ion-content>
