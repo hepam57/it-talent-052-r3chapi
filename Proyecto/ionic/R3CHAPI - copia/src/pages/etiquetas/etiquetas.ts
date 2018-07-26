@@ -1,5 +1,6 @@
 import { Component } from '@angular/core';
 import { IonicPage, NavController, NavParams } from 'ionic-angular';
+import {ListarNoticiasEtiquetasPage} from "../listar-noticias-etiquetas/listar-noticias-etiquetas";
 
 /**
  * Generated class for the EtiquetasPage page.
@@ -23,5 +24,7 @@ export class EtiquetasPage {
   ionViewDidLoad() {
     console.log('ionViewDidLoad EtiquetasPage');
   }
-
+  goNoticiasEtiqueta():void {
+    this.navCtrl.push(ListarNoticiasEtiquetasPage);
+  }
 }

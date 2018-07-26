@@ -10,10 +10,13 @@ import { TabsPage } from '../pages/tabs/tabs';
 
 import { StatusBar } from '@ionic-native/status-bar';
 import { SplashScreen } from '@ionic-native/splash-screen';
+<<<<<<< HEAD
+=======
 import {Geolocation} from "@ionic-native/geolocation";
 import {Camera} from "@ionic-native/camera";
 import { UserProvider } from '../providers/user/user';
 import {HttpClientModule} from "@angular/common/http";
+>>>>>>> 25846237c98b362aa87faa98602bdab6ab83ef91
 
 @NgModule({
   declarations: [
@@ -25,8 +28,12 @@ import {HttpClientModule} from "@angular/common/http";
   ],
   imports: [
     BrowserModule,
+<<<<<<< HEAD
+    IonicModule.forRoot(MyApp)
+=======
     IonicModule.forRoot(MyApp),
     HttpClientModule
+>>>>>>> 25846237c98b362aa87faa98602bdab6ab83ef91
   ],
   bootstrap: [IonicApp],
   entryComponents: [
@@ -39,10 +46,14 @@ import {HttpClientModule} from "@angular/common/http";
   providers: [
     StatusBar,
     SplashScreen,
+<<<<<<< HEAD
+    {provide: ErrorHandler, useClass: IonicErrorHandler}
+=======
     Geolocation,
     Camera,
     {provide: ErrorHandler, useClass: IonicErrorHandler},
     UserProvider
+>>>>>>> 25846237c98b362aa87faa98602bdab6ab83ef91
   ]
 })
 export class AppModule {}

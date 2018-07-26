@@ -1,7 +1,11 @@
 import { Component } from '@angular/core';
+<<<<<<< HEAD
+import { NavController } from 'ionic-angular';
+=======
 import {NavController, Platform} from 'ionic-angular';
 import {Geolocation} from "@ionic-native/geolocation";
 import {Camera, CameraOptions} from "@ionic-native/camera";
+>>>>>>> 25846237c98b362aa87faa98602bdab6ab83ef91
 
 @Component({
   selector: 'page-home',
@@ -9,6 +13,12 @@ import {Camera, CameraOptions} from "@ionic-native/camera";
 })
 export class HomePage {
 
+<<<<<<< HEAD
+  constructor(public navCtrl: NavController) {
+
+  }
+
+=======
 
   constructor(public navCtrl: NavController, public geolocation: Geolocation, public platform: Platform, public camera: Camera) {
     this.platform.ready().then(()=>{
@@ -34,4 +44,5 @@ export class HomePage {
 
 
 
+>>>>>>> 25846237c98b362aa87faa98602bdab6ab83ef91
 }

@@ -10,6 +10,8 @@ import { SplashScreen } from '@ionic-native/splash-screen';
 import { PerfilPage } from "../pages/perfil/perfil";
 import { EtiquetasPage } from "../pages/etiquetas/etiquetas";
 import { ListaNoticiasPage } from "../pages/lista-noticias/lista-noticias";
+import { ListarNoticiasEtiquetasPage } from "../pages/listar-noticias-etiquetas/listar-noticias-etiquetas";
+import { NoticiaPage } from "../pages/noticia/noticia";
 
 @NgModule({
   declarations: [
@@ -17,7 +19,9 @@ import { ListaNoticiasPage } from "../pages/lista-noticias/lista-noticias";
     PerfilPage,
     EtiquetasPage,
     ListaNoticiasPage,
-    TabsPage
+    TabsPage,
+    ListarNoticiasEtiquetasPage,
+    NoticiaPage
   ],
   imports: [
     BrowserModule,
@@ -29,7 +33,9 @@ import { ListaNoticiasPage } from "../pages/lista-noticias/lista-noticias";
     PerfilPage,
     EtiquetasPage,
     ListaNoticiasPage,
-    TabsPage
+    TabsPage,
+    ListarNoticiasEtiquetasPage,
+    NoticiaPage
   ],
   providers: [
     StatusBar,

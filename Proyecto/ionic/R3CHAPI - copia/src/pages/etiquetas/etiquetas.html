@@ -16,9 +16,9 @@
 <ion-content padding>
   <ion-row>
     <ion-col *ngFor="let etiqueta of etiquetas" col-4>
-      <ion-item>
-        {{ etiqueta }}
-      </ion-item>
+        <button ion-item icon-start (click)="goNoticiasEtiqueta()" >
+          {{ etiqueta }}
+        </button>
     </ion-col>
   </ion-row>
 </ion-content>

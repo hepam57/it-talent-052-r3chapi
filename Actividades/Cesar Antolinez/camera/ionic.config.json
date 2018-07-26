@@ -1,8 +1,15 @@
 {
+<<<<<<< HEAD
+  "name": "ionic2-app-base",
+  "app_id": "",
+  "type": "ionic-angular",
+  "integrations": {}
+=======
   "name": "camera",
   "app_id": "",
   "type": "ionic-angular",
   "integrations": {
     "cordova": {}
   }
+>>>>>>> 25846237c98b362aa87faa98602bdab6ab83ef91
 }
