@@ -13,6 +13,29 @@
 </ion-header>
 
 
-<ion-content padding>
+<ion-content padding class="card-background-page">
 
+  <ion-card *ngFor="let item of noticias" (click)="goNoticia(item.id)">
+
+    <img *ngIf="item?.url" src="{{item.url}}"/>
+
+    <ion-card-content>
+      <ion-card-title>
+        {{item.titulo}}
+      </ion-card-title>
+      <p>
+        {{item.description}}
+      </p>
+    </ion-card-content>
+
+    <ion-row no-padding>
+      <ion-col text-right>
+        <button ion-button clear small color="danger" icon-start (click)="goNoticia(item.id)">
+          <ion-icon name='share-alt'></ion-icon>
+          Leer mas
+        </button>
+      </ion-col>
+    </ion-row>
+
+  </ion-card>
 </ion-content>

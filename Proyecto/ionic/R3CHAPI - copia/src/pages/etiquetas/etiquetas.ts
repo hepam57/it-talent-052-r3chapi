@@ -24,7 +24,7 @@ export class EtiquetasPage {
   ionViewDidLoad() {
     console.log('ionViewDidLoad EtiquetasPage');
   }
-  openNavDetailsPage(item) {
+  goNoticiasEtiqueta():void {
     this.navCtrl.push(ListarNoticiasEtiquetasPage);
   }
 }
