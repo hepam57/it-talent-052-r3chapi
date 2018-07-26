@@ -20,6 +20,13 @@ Modelo relacional
 ![Módelo relacional](https://raw.githubusercontent.com/TalentoBogotaFedesoft/it-talent-052-r3chapi/master/Proyecto/Modelo%20relacional/ER1.png)
 ---
 
+Modelo Fisico [dbschema] PostgreSql
+
+---
+
+![Módelo Fisico](https://raw.githubusercontent.com/TalentoBogotaFedesoft/it-talent-052-r3chapi/master/Proyecto/Modelo%20relacional/modelo_fisico.png)
+---
+
 Sketch y Prototipo App movil
 
 ---
