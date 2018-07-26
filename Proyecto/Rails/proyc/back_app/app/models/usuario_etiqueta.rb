@@ -1,0 +1,2 @@
+class UsuarioEtiqueta < ApplicationRecord
+end
