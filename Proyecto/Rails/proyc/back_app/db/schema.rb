@@ -10,7 +10,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 2018_07_26_155413) do
+ActiveRecord::Schema.define(version: 2018_07_26_160948) do
 
   # These are extensions that must be enabled in order to support this database
   enable_extension "plpgsql"
@@ -49,15 +49,6 @@ ActiveRecord::Schema.define(version: 2018_07_26_155413) do
     t.index ["administradores_id"], name: "index_etiquetas_on_administradores_id"
   end
 
-  create_table "informativo_etiquetas", force: :cascade do |t|
-    t.bigint "informativos_id"
-    t.bigint "etiquetas_id"
-    t.datetime "created_at", null: false
-    t.datetime "updated_at", null: false
-    t.index ["etiquetas_id"], name: "index_informativo_etiquetas_on_etiquetas_id"
-    t.index ["informativos_id"], name: "index_informativo_etiquetas_on_informativos_id"
-  end
-
   create_table "informativos", force: :cascade do |t|
     t.string "in_titulo"
     t.string "in_img_hero"
@@ -68,6 +59,15 @@ ActiveRecord::Schema.define(version: 2018_07_26_155413) do
     t.datetime "updated_at", null: false
     t.bigint "administradores_id"
     t.index ["administradores_id"], name: "index_informativos_on_administradores_id"
+  end
+
+  create_table "informativos_etiquetas", force: :cascade do |t|
+    t.bigint "informativos_id"
+    t.bigint "etiquetas_id"
+    t.datetime "created_at", null: false
+    t.datetime "updated_at", null: false
+    t.index ["etiquetas_id"], name: "index_informativos_etiquetas_on_etiquetas_id"
+    t.index ["informativos_id"], name: "index_informativos_etiquetas_on_informativos_id"
   end
 
   create_table "usuarios", force: :cascade do |t|

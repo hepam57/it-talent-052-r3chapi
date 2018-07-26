@@ -26,7 +26,7 @@
     inflect.irregular 'Etiqueta', 'Etiquetas'
     inflect.irregular 'usuario_etiqueta', 'usuarios_etiquetas'
     inflect.irregular 'Usuario_etiqueta', 'Usuarios_etiquetas'
-    inflect.irregular 'informativo_etiqueta', 'informativo_etiquetas'
-    inflect.irregular 'Informativo_etiqueta', 'Informativo_etiquetas'
+    inflect.irregular 'informativo_etiqueta', 'informativos_etiquetas'
+    inflect.irregular 'Informativo_etiqueta', 'Informativos_etiquetas'
  end
   
