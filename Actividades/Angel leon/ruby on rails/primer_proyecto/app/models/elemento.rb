@@ -1,2 +1,0 @@
-class Elemento < ApplicationRecord
-end
