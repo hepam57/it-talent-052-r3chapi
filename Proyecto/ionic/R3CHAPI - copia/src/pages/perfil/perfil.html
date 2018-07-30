@@ -7,24 +7,37 @@
 <ion-header>
 
   <ion-navbar>
-    <ion-title>Perfil</ion-title>
+    <ion-title>
+      Perfil
+    </ion-title>
+    <!--<ion-buttons end>
+      <button ion-button clear small icon-start>
+        <ion-icon name='create'></ion-icon>
+      </button>
+    </ion-buttons>-->
   </ion-navbar>
 
 </ion-header>
 
 
 <ion-content padding>
-  <ion-list>
-
-    <ion-item>
-      <ion-label floating>Nombre</ion-label>
-      <ion-input type="text"></ion-input>
-    </ion-item>
-
-    <ion-item>
-      <ion-label floating>Correo</ion-label>
-      <ion-title>exaple.com.co</ion-title>
-    </ion-item>
-
-  </ion-list>
+    <ion-row text-center margin-top="">
+      <ion-col col-12>
+        <h6 >Nombre</h6>
+        <h1 Text-Capitalize> Cesar Alejandro Antolinez poveda</h1>
+      </ion-col>
+      <ion-col col-12>
+        <h6>Correo</h6>
+        <h5>cesaraleajndroantolinez@gmail.com</h5>
+      </ion-col>
+      <ion-col col-12>
+        <h6>Genero</h6>
+        <h5>Hombre</h5>
+      </ion-col>
+      <ion-col col-12>
+        <button ion-button icon-start (click)="goEditarPerfil()">
+          <ion-icon name='create'></ion-icon> Editar Perfil
+        </button>
+      </ion-col>
+    </ion-row>
 </ion-content>

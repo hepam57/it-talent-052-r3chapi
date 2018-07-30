@@ -18,8 +18,8 @@
   <img src="{{noticia.url}}" style="width: 100%;height: auto"/>
   <ion-grid>
     <ion-row>
-      <ion-col col-12>
-        {{noticia.description}}
+      <ion-col col-12 >
+        <div [innerHtml]="noticia.description"></div>
       </ion-col>
     </ion-row>
   </ion-grid>

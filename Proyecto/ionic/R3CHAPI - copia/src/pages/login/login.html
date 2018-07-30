@@ -1,0 +1,19 @@
+<ion-content padding>
+  <ion-title text-center margin="1rem">Iniciar sesión</ion-title>
+  <ion-list>
+
+    <ion-item>
+      <ion-label floating>Correo</ion-label>
+      <ion-input [(ngModel)]="correo" type="email" value=""></ion-input>
+    </ion-item>
+
+    <ion-item>
+      <ion-label floating>Contraseña</ion-label>
+      <ion-input [(ngModel)]="contrasena" type="password"></ion-input>
+    </ion-item>
+
+  </ion-list>
+  <div padding>
+    <button ion-button color="primary" float-right>Iniciar sesión</button>
+  </div>
+</ion-content>

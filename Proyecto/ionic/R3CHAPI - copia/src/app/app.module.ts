@@ -12,6 +12,9 @@ import { EtiquetasPage } from "../pages/etiquetas/etiquetas";
 import { ListaNoticiasPage } from "../pages/lista-noticias/lista-noticias";
 import { ListarNoticiasEtiquetasPage } from "../pages/listar-noticias-etiquetas/listar-noticias-etiquetas";
 import { NoticiaPage } from "../pages/noticia/noticia";
+import { EditarPerfilPage } from "../pages/editar-perfil/editar-perfil";
+import {LoginPage} from "../pages/login/login";
+import {RegistroPage} from "../pages/registro/registro";
 
 @NgModule({
   declarations: [
@@ -21,7 +24,10 @@ import { NoticiaPage } from "../pages/noticia/noticia";
     ListaNoticiasPage,
     TabsPage,
     ListarNoticiasEtiquetasPage,
-    NoticiaPage
+    NoticiaPage,
+    EditarPerfilPage,
+    LoginPage,
+    RegistroPage
   ],
   imports: [
     BrowserModule,
@@ -35,7 +41,10 @@ import { NoticiaPage } from "../pages/noticia/noticia";
     ListaNoticiasPage,
     TabsPage,
     ListarNoticiasEtiquetasPage,
-    NoticiaPage
+    NoticiaPage,
+    EditarPerfilPage,
+    LoginPage,
+    RegistroPage
   ],
   providers: [
     StatusBar,

@@ -1,9 +1,8 @@
 import { Component } from '@angular/core';
 import { IonicPage, NavController, NavParams } from 'ionic-angular';
-import {EditarPerfilPage} from "../editar-perfil/editar-perfil";
 
 /**
- * Generated class for the PerfilPage page.
+ * Generated class for the RegistroPage page.
  *
  * See https://ionicframework.com/docs/components/#navigation for more info on
  * Ionic pages and navigation.
@@ -11,20 +10,21 @@ import {EditarPerfilPage} from "../editar-perfil/editar-perfil";
 
 @IonicPage()
 @Component({
-  selector: 'page-perfil',
-  templateUrl: 'perfil.html',
+  selector: 'page-registro',
+  templateUrl: 'registro.html',
 })
-export class PerfilPage {
+export class RegistroPage {
+  public nombre:string;
+  public correo:string;
+  public genero:string;
+  public contrasena:string;
+  public confirmarContrasena:string;
 
   constructor(public navCtrl: NavController, public navParams: NavParams) {
   }
 
   ionViewDidLoad() {
-    console.log('ionViewDidLoad PerfilPage');
-  }
-
-  goEditarPerfil(){
-    this.navCtrl.push(EditarPerfilPage);
+    console.log('ionViewDidLoad RegistroPage');
   }
 
 }
