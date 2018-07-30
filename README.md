@@ -6,9 +6,8 @@ Aplicaciòn para brindar pedagia a los habitantes de chapinero sobre el tratamie
 
 ## Integrantes
 
-- Liliana Poveda
-- Cesar Antolinez
 - Angel Leon
+- Cesar Antolinez
 
 
 ## Proyecto
@@ -38,7 +37,7 @@ Sketch app
 
 Prototipo App movil hecho con Azure RP
 
-[Prototipo app Movil](https://c0der97.github.io/Proyecto/prototipo/index.html)
+[Prototipo app Movil](https://c0der97.github.io/landing_proto/prototipo/)
 
  
 Wireframes Back-office 
@@ -72,7 +71,7 @@ Sketch página de producto
 
 ![sketch langind](https://raw.githubusercontent.com/TalentoBogotaFedesoft/it-talent-052-r3chapi/master/Proyecto/diseños/Diseño%20UI/wireframe-landing/landing-1.jpeg)
 
-[Pagina producto](https://c0der97.github.io/Proyecto/landing/)
+[Pagina producto](https://c0der97.github.io/landing_proto/landing/)
 
 
 ![Logo Proyecto](https://raw.githubusercontent.com/TalentoBogotaFedesoft/it-talent-052-r3chapi/master/Proyecto/diseños/landing/landing.png)

@@ -1,2 +1,0 @@
-class UniversidadLocalidad < ApplicationRecord
-end
