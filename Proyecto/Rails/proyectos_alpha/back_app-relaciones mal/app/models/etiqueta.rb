@@ -1,2 +1,0 @@
-class Etiqueta < ApplicationRecord
-end

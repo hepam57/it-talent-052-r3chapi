@@ -1,2 +1,0 @@
-class InformativoEtiqueta < ApplicationRecord
-end
