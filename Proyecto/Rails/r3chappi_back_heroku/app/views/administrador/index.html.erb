@@ -1,0 +1,41 @@
+<div class="container">
+    <div class="row">
+        <div class="col-lg-8 col-sm-10 col-md-8 col-xs-12 mx-auto">
+            <div class="text-center">
+                    <img class="img-fluid" src="https://raw.githubusercontent.com/TalentoBogotaFedesoft/it-talent-052-r3chapi/master/Proyecto/dise%C3%B1os/logo/logo.png"/>
+            </div>
+            <h1>Crear informativo</h1>
+            <form class="" action="<%= informativo_crear_path %>" method="POST" style="display: block;margin:0 auto;">
+                <input type="hidden" name="authenticity_token" value="<%= form_authenticity_token %>">
+                <div class="form-group">
+                    <label for="titulo">Título de la noticia</label>
+                    <input type="text" class="form-control" name="informativo[titulo]" aria-describedby="Título" placeholder="Título" required>
+                </div>
+                <div class="form-group">
+                    <label for="url">Url de imagen</label>
+                    <input type="url" class="form-control" name="informativo[imagen]" aria-describedby="imagen" placeholder="Url de imagen" required>
+                </div>
+                <div class="form-group">
+                    <label for="exampleFormControlTextarea1">Descripción</label>
+                    <textarea class="form-control" name="informativo[descripcion]" rows="6" required></textarea>
+                </div>
+
+                <div class="form-group">
+                    <label for="sel1">Etiqueta:</label>
+                    <select name="etiqueta[etiqueta]" class="form-control" required>
+                        <% @etiquetas.each do |etiqueta| %>
+                            <option value="<%= etiqueta.id %>">
+                                <%= etiqueta.nombre %>
+                            </option>
+                            <% end %>
+
+                    </select>
+                </div>
+
+                <button type="submit" class="btn  btn-success btn-block">Crear</button>
+
+            </form>
+
+        </div>
+    </div>
+</div>
