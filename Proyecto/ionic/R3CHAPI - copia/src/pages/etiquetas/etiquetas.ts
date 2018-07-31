@@ -1,6 +1,7 @@
 import { Component } from '@angular/core';
-import { IonicPage, NavController, NavParams } from 'ionic-angular';
+import {IonicPage, NavController, NavParams, ToastController} from 'ionic-angular';
 import {ListarNoticiasEtiquetasPage} from "../listar-noticias-etiquetas/listar-noticias-etiquetas";
+import {EtiquetasProvider} from "../../providers/etiquetas/etiquetas";
 
 /**
  * Generated class for the EtiquetasPage page.
@@ -15,16 +16,28 @@ import {ListarNoticiasEtiquetasPage} from "../listar-noticias-etiquetas/listar-n
   templateUrl: 'etiquetas.html',
 })
 export class EtiquetasPage {
-  public etiquetas: Array<any>;
+  public etiquetas: any[] = [];
 
-  constructor(public navCtrl: NavController, public navParams: NavParams) {
-    this.etiquetas = ['prueba 1','prueba 2','prueba 3','prueba 4','prueba 5'];
+  constructor(public navCtrl: NavController, public navParams: NavParams, public eti: EtiquetasProvider, public toastCtrl: ToastController) {
+
+    this.eti.all().subscribe((respuesta)=>{
+
+      this.etiquetas = respuesta['etiquetas'];
+    }, () => {
+      const toast = this.toastCtrl.create({
+        message: 'Error carga',
+        duration: 3000,
+        position: 'bottom'
+      });
+      toast.present();
+    });
+
   }
 
   ionViewDidLoad() {
     console.log('ionViewDidLoad EtiquetasPage');
   }
-  goNoticiasEtiqueta():void {
-    this.navCtrl.push(ListarNoticiasEtiquetasPage);
+  goNoticiasEtiqueta(id,nombre):void {
+    this.navCtrl.push(ListarNoticiasEtiquetasPage, {id:id, nombre:nombre});
   }
 }

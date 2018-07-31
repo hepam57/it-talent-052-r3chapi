@@ -1,5 +1,6 @@
 import { Component } from '@angular/core';
-import { IonicPage, NavController, NavParams } from 'ionic-angular';
+import {IonicPage, NavController, NavParams, ToastController} from 'ionic-angular';
+import {NoticiasProvider} from "../../providers/noticias/noticias";
 
 /**
  * Generated class for the NoticiaPage page.
@@ -15,14 +16,18 @@ import { IonicPage, NavController, NavParams } from 'ionic-angular';
 })
 export class NoticiaPage {
   public noticia: any;
-  constructor(public navCtrl: NavController, public navParams: NavParams) {
-    this.noticia = {
-      'id':'3',
-      'titulo':'Noticia 3',
-      'description':'<h1>Lorem</h1> <b>Ipsu</b> es simplemente el texto de relleno de las imprentas y archivos de texto. Lorem Ipsum ha sido el texto de relleno estándar de las industrias desde el año 1500.',
-      'url':'http://static.t13.cl/images/sizes/1200x675/1532532005-rick-and-morty-658x370-4b072da7af5b7106.jpg'
-    };
-    console.log(this.noticia);
+  constructor(public navCtrl: NavController, public navParams: NavParams, public noticasP: NoticiasProvider, public toastCtrl: ToastController) {
+    this.noticasP.find(this.navParams.get('id')).subscribe((respuesta) => {
+      this.noticia = respuesta['noticia'];
+      console.log(this.noticia);
+    }, () => {
+      const toast = this.toastCtrl.create({
+        message: 'Error carga',
+        duration: 3000,
+        position: 'bottom'
+      });
+      toast.present();
+    });
   }
 
   ionViewDidLoad() {

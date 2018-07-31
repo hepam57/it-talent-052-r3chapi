@@ -23,10 +23,10 @@ default: &default
 
 development:
   <<: *default
-  database: r3chappi_production
+  database: r3chappi_development
   pool: 5
   username: postgres
-  password: root
+  password: alejandro22
   host: localhost
   port: 5432
 
@@ -65,7 +65,7 @@ test:
   database: r3chappi_test
   pool: 5
   username: postgres
-  password: root
+  password: alejandro22
   host: localhost
   port: 5432
 
@@ -93,6 +93,6 @@ production:
   database: r3chappi_production
   pool: 5
   username: postgres
-  password: root
+  password: alejandro22
   host: localhost
   port: 5432

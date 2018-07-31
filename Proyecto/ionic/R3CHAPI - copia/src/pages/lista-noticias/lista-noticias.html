@@ -7,7 +7,7 @@
 <ion-header>
 
   <ion-navbar>
-    <ion-title>ListaNoticias</ion-title>
+    <ion-title>Noticias</ion-title>
   </ion-navbar>
 
 </ion-header>
@@ -16,14 +16,14 @@
 <ion-content padding>
   <ion-card *ngFor="let item of noticias" (click)="goNoticia(item.id)">
 
-    <img *ngIf="item?.url" src="{{item.url}}"/>
+    <img *ngIf="item?.imagen" src="{{item.imagen}}"/>
 
     <ion-card-content>
       <ion-card-title>
         {{item.titulo}}
       </ion-card-title>
       <p>
-        {{item.description}}
+        {{item.descripcion}}
       </p>
     </ion-card-content>
 
@@ -35,6 +35,5 @@
         </button>
       </ion-col>
     </ion-row>
-
   </ion-card>
 </ion-content>

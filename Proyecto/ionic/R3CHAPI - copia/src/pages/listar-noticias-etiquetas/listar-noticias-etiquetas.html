@@ -7,7 +7,7 @@
 <ion-header>
 
   <ion-navbar>
-    <ion-title>ListarNoticiasEtiquetas</ion-title>
+    <ion-title>Noticias de {{titulo}}</ion-title>
   </ion-navbar>
 
 </ion-header>
@@ -17,14 +17,14 @@
 
   <ion-card *ngFor="let item of noticias" (click)="goNoticia(item.id)">
 
-    <img *ngIf="item?.url" src="{{item.url}}"/>
+    <img *ngIf="item?.imagen" src="{{item.imagen}}"/>
 
     <ion-card-content>
       <ion-card-title>
         {{item.titulo}}
       </ion-card-title>
       <p>
-        {{item.description}}
+        {{item.descripcion}}
       </p>
     </ion-card-content>
 

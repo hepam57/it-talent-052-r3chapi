@@ -7,7 +7,7 @@
 <ion-header>
 
   <ion-navbar>
-    <ion-title>{{noticia.titulo}}</ion-title>
+    <ion-title>{{noticia?.titulo}}</ion-title>
   </ion-navbar>
 
 </ion-header>
@@ -15,11 +15,11 @@
 
 <ion-content padding>
 
-  <img src="{{noticia.url}}" style="width: 100%;height: auto"/>
+  <img src="{{noticia?.imagen}}" style="width: 100%;height: auto"/>
   <ion-grid>
     <ion-row>
       <ion-col col-12 >
-        <div [innerHtml]="noticia.description"></div>
+        <div [innerHtml]="noticia?.descripcion"></div>
       </ion-col>
     </ion-row>
   </ion-grid>

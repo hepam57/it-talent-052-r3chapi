@@ -15,6 +15,9 @@ import { NoticiaPage } from "../pages/noticia/noticia";
 import { EditarPerfilPage } from "../pages/editar-perfil/editar-perfil";
 import {LoginPage} from "../pages/login/login";
 import {RegistroPage} from "../pages/registro/registro";
+import { EtiquetasProvider } from '../providers/etiquetas/etiquetas';
+import { NoticiasProvider } from '../providers/noticias/noticias';
+import {HttpClientModule} from "@angular/common/http";
 
 @NgModule({
   declarations: [
@@ -31,7 +34,8 @@ import {RegistroPage} from "../pages/registro/registro";
   ],
   imports: [
     BrowserModule,
-    IonicModule.forRoot(MyApp)
+    IonicModule.forRoot(MyApp),
+    HttpClientModule
   ],
   bootstrap: [IonicApp],
   entryComponents: [
@@ -49,7 +53,9 @@ import {RegistroPage} from "../pages/registro/registro";
   providers: [
     StatusBar,
     SplashScreen,
-    {provide: ErrorHandler, useClass: IonicErrorHandler}
+    {provide: ErrorHandler, useClass: IonicErrorHandler},
+    EtiquetasProvider,
+    NoticiasProvider
   ]
 })
 export class AppModule {}
